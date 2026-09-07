@@ -7,7 +7,7 @@
 
 
 # for loop with range() function
-# for i in range(2, 11, 2):  #range(start, stop, gap)
+# for i in range(2, 11, 2):  #range(start, stop, step)
 #     print(i)
 
 
