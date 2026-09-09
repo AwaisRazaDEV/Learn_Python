@@ -1,5 +1,5 @@
 '''
-List items are indexed, you can access them through their index number:
+Tuple items are indexed, you can access them through their index number:
 
 The 1st item has index [0]
 The 2nd item has index [1]
@@ -7,7 +7,7 @@ The 3rd item has index [2]
 and so on .......
 '''
 
-fruits = ["Apple", "Mango", "Grapes", "Banana", "Peach"]
+fruits = ("Apple", "Mango", "Grapes", "Banana", "Peach")
 print(fruits[3])
 
 # <--------------  Negative Indexing  -------------->
@@ -23,10 +23,10 @@ and so on ......
 print(fruits[-3])
 
 # <--------------  Range of Indexes  -------------->
-# We can specify a range of indexes by specifying were to start and where to end the range.also, it will give a new list
+# We can specify a range of indexes by specifying were to start and where to end the range.Also, it will give a new tuple
 
-new_list = fruits[1:4]
-print(new_list)
+new_tuple = fruits[1:4]
+print(new_tuple)
 
 #    !       start:end:step  -->  (include)1:4(not include)
 
@@ -43,5 +43,5 @@ print(fruits[2:])
 
 print(fruits[-1:-4:-1])
 
-# It inverse all the items on the list
+# It inverse all the items on the tuple
 print(fruits[::-1])

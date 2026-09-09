@@ -7,12 +7,12 @@ x = ["Awais", 999, 3.14, True]
 '''
 List items are ordered, changeable, and allow duplicate values.
 
-Ordered: When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+( Ordered ) : When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
 ( ! There are some list methods that will change the order, but in general: the order of the items will not change.)
 
-Changeable: The list is changeable, meaning that we can change, add and remove items in a list after it have been created.
+( Changeable ) : The list is changeable, meaning that we can change, add and remove items in a list after it have been created.
 
-Allow Duplicates: Since lists are indexed, lists can have items with the same value.
+( Allow Duplicates ): Since lists are indexed, lists can have items with the same value.
 '''
 
 # <-----------  List Length  ----------->
