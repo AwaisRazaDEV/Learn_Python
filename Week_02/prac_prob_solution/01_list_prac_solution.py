@@ -163,3 +163,44 @@ for number in numbers:
     new_list.insert(0, number)
 
 print("Reversed List:", new_list)
+
+
+
+
+
+# <--------------------------- Mini Project --------------------------->
+# Create a program that stores the marks of 5 students:
+
+marks = [78, 92, 65, 88, 55]
+total_marks = 0
+highest_mark = marks[0]
+lowest_mark = marks[0]
+students = 0
+
+# Your program should calculate:
+# Total marks
+# Average
+# Highest mark
+# Lowest mark
+# Number of students who scored 80 or above
+
+# Try doing everything with lists + loops, without using sum(), max(), or min().
+
+for mark in marks:
+    total_marks += mark
+    if highest_mark < mark:
+        highest_mark = mark
+    
+    if mark < lowest_mark:
+        lowest_mark = mark
+    
+    if mark >= 80:
+        students += 1
+
+
+print("Total marks are:", total_marks)
+average_mark = total_marks / len(marks)
+print("Average mark is:", average_mark)
+print("The highest mark is:", highest_mark)
+print("The lowest mark is:", lowest_mark)
+print(students, "students have scored 80 or above")
