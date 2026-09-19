@@ -132,6 +132,15 @@ print(f"{student} Obtained Highest marks : {max_number}")
 # Given:
 word = "banana"
 # Create a dictionary that counts how many times each character appears.
+this_dict = {}
+
+for character in word:
+    if character not in this_dict:
+        this_dict[character] = 1
+    else:
+        this_dict[character] += 1
+
+print(this_dict)
 
 # Expected:
 # {
@@ -145,6 +154,15 @@ word = "banana"
 # Given:
 sentence = "apple banana apple orange banana apple"
 # Create a dictionary that counts each word.
+words = {}
+
+for word in sentence.split():
+    if word not in words:
+        words[word] = 1
+    else:
+        words[word] += 1
+
+print(words)
 
 # Expected:
 # {
@@ -168,10 +186,36 @@ students = {
 }
 # Write a program that:
 # Prints all students
+total_marks = 0
+highest_marks = 0
+good_students = 0
+
+print("\nStudents are :")
+for name in students.keys():
+    print("->", name)
+
+print("\nMarks are :")
 # Prints their marks
+for marks in students.values():
+    print("->", marks)
+    
 # Calculates the average marks
+    total_marks += marks
+    
+    if highest_marks < marks:
+        highest_marks = marks
+        
+    if marks > 80:
+        good_students += 1
+
+average_marks = total_marks / len(students)
+print("\nAverage marks are :", average_marks)
+
 # Finds the highest marks
+print("\nHighest marks are :", highest_marks)
+
 # Counts how many students scored 80+
+print(f"\nOut of {len(students)} students, {good_students} students scored 80+ marks.\n")
 
 
 # 13. Nested dictionary
@@ -188,5 +232,8 @@ students = {
 # Print:
 # Ali is 20 years old and scored 85
 # Sara is 19 years old and scored 92
+
+for name, about in students.items():
+    print(f"{name} is {about['age']} years old and scored {about['marks']}")
 
 # Use a loop.
