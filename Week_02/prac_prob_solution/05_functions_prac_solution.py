@@ -199,49 +199,255 @@
 # <--------------------------- Level 3 — Scope --------------------------->
 
 # 19. Create a global variable representing a tax rate. Create a function that uses this variable to calculate the tax on a given price.
-tax_rate = 16.5 * (1 / 100)
-def calculate_tax(price):
-    return price * tax_rate
+# tax_rate = 16.5 * (1 / 100)
+# def calculate_tax(price):
+#     return price * tax_rate
 
-print("Your tax is :", calculate_tax(50000))
+# print("Your tax is :", calculate_tax(50000))
 
 # 20. Create a function with a local variable and use that variable inside the function.
-def demo():
-    x = 12345
-    print(x)
+# def demo():
+#     x = 12345
+#     print(x)
 
-demo()
+# demo()
+
 # 21. Create two different functions where each function has its own local variable with the same name. Use both functions and observe that they maintain separate values.
+# def func1():
+#     a = 123
+#     print(a)
+    
+# def func2():
+#     a = 456
+#     print(a)
+
+# func1()
+# func2()
 
 # 22. Create a global variable representing a counter. Create a function that reads and displays its value without creating another variable with the same name.
-# 23. Create a program with a global variable called name and a function containing a local variable with the same name. Display both values from their respective scopes.
-# 24. Create two functions that each have a local variable called message, but give the variables different values.
-# 25. Create a function that receives a parameter called number and also contains another local variable. Use both inside the function.
+# counter = 0
+# def test():
+#     print(counter)
 
+# test()
+
+# 23. Create a program with a global variable called name and a function containing a local variable with the same name. Display both values from their respective scopes.
+# name = "Awais"
+# def demo():
+#     name = "John"
+#     print(name)
+
+# print(name)
+# demo()
+
+# # 24. Create two functions that each have a local variable called message, but give the variables different values.
+# def fun1():
+#     message = "Hello world!"
+#     return message
+
+# def fun2():
+#     message = "Hello Awais!"
+#     return message
+
+# print(fun1())
+# print(fun2())
+
+# 25. Create a function that receives a parameter called number and also contains another local variable. Use both inside the function.
+# def test(number):
+#     message = f"I pass the number {number} as argument"
+#     return message
+
+# print(test(12))
 
 
 # <--------------------------- Level 4 — Mixed Challenges --------------------------->
 
 # 26. Create a function that receives a student's name and three marks. Calculate the average and display the student's result.
+# def student_result(name, mark1, mark2, mark3):
+#     total_marks = mark1 + mark2 + mark3   
+#     average_marks = total_marks / 3
+#     print(f"{name} scored {average_marks} average marks")
+
+# student_result("Awais", 10, 20, 30)
+
 # 27. Create a function that receives a product's name, price, and quantity. Calculate and display the total cost.
+'''
+Same as # 15
+'''
+
 # 28. Create a function that receives a person's age and determines whether they are a child, teenager, adult, or senior.
+# def age_meter(age):
+#     if age < 0:
+#         print("Invalid age")
+#     elif age <= 12:
+#         print("Your are : Child")
+#     elif age <= 19:
+#         print("Your are : Teenager")
+#     elif age <= 64:
+#         print("Your are : Adult")
+#     else:
+#         print("Your are : Senior")
+
+# age = int(input("Enter your age : "))
+
+# age_meter(age)
+
 # 29. Create a function that receives a number and returns the sum of all numbers from 1 up to that number.
+# def sum_all(number):
+#     total_sum = 0
+#     for i in range(1, number + 1):
+#         total_sum += i
+#     return f"Sum of all numbers tell {number} is : {total_sum}"
+# 100
+# number = int(input("Enter any number : "))
+# print(sum_all(number))
+
 # 30. Create a function that receives a list of numbers and returns the largest number.
+# def find_largest(numbers):
+#     largest_number = numbers[0]
+#     for num in numbers:
+#         if num > largest_number:
+#             largest_number = num
+#     return largest_number
+# print("The largest number is :", find_largest([10, 20, 30]))
+
 # 31. Create a function that receives a list of numbers and returns how many numbers are even.
+# def count_even_numbers(numbers):
+#     even_numbers = 0
+#     for num in numbers:
+#         if num % 2 == 0:
+#             even_numbers += 1
+#     return even_numbers
+
+# even_numbers = [1, 3, 5, 2, 70, 99]
+# print("There are", count_even_numbers(even_numbers), "even numbers in the list")
+
 # 32. Create a function that receives a list of numbers and calculates their average.
+# def calculate_average(numbers):
+#     total_numbers = 0
+#     for num in numbers:
+#         total_numbers += num
+#     return total_numbers / len(numbers)
+
+# numbers = [1, 3, 5, 2, 70, 99]
+# print("The average of the list is :", calculate_average(numbers))
+
 # 33. Create a function that receives a student's name and a list of marks. Display the student's name, highest mark, lowest mark, and average.
+# def student_result(name, marks):
+#     highest = max(marks)
+#     lowest = min(marks)
+#     average = sum(marks) / len(marks)
+    
+#     print(f"Studnet : {name}")
+#     print(f"Highest mark : {highest}")
+#     print(f"Lowest mark : {lowest}")
+#     print(f"Average : {average}")
+
+# student_result("Awais", [50, 60, 70, 80, 90])
+
 # 34. Create a function that receives a username and password and determines whether they match predefined login information stored outside the function.
+# correct_username = "admin"
+# correct_password = "admin123"
+# def auth(username, userpass):
+#     if username == correct_username:
+#         if userpass == correct_password:
+#             return "Login Successfull"
+#         else:
+#             return "Wrong Password"
+#     else:
+#         return "User not found"
+
+# user = input("Enter username : ")
+# password = input("Enter password : ")
+
+# result = auth(user, password)
+# print(result)
+
 # 35. Create a program with a global variable representing a shop's discount percentage. Create a function that receives an item's price and calculates its discounted price.
+# shop_discount = 20
+# def discounted_price(prince):
+#     discount = prince * (shop_discount / 100)
+#     return prince - discount
+
+# print("Discounted Price : ", discounted_price(1000))
 
 
 
 # <--------------------------- Harder Mixed Challenges --------------------------->
 
 # 36. Create a function that receives a number and returns whether it is prime.
+# def check_prime(number):
+#     if number < 2:
+#         return False
+
+#     for divisor in range(2, number):
+#         if number % divisor == 0:
+#             return False
+
+#     return True
+
+
+# print(check_prime(7)) 
+
 # 37. Create a function that receives a number and calculates its factorial.
+# def calculate_factorial(number):
+#     factorial = 1
+    
+#     if number < 0:
+#         return "Invalid number"
+
+#     for n in range(number, 0, -1):
+#         factorial *= n
+#     return factorial
+
+# print(calculate_factorial(10))
+
 # 38. Create a function that receives a list and a value, then determines how many times that value appears in the list.
+# def count_value(number, numbers):
+#     count = 0
+
+#     for n in numbers:
+#         if n == number:
+#             count += 1
+#     return count
+
+# print(count_value(1, [1, 2, 3, 4, 1, 1, 1]))
+
 # 39. Create a function that receives two lists and returns the elements that appear in both lists.
+# def same_values(list1, list2):
+#     common = []
+    
+#     for i in list1:
+#         for j in list2:
+#             unique_element = i not in common
+#             if i == j and unique_element:
+#                 common.append(i)
+#     return common
+
+# a = [1, 2, 3, 4, 5, 9, 10]
+# b = [4, 5, 6, 7, 10, 1, 3, 4, 2, 3, 4, 6, ]
+# print(same_values(a, b))
+
 # 40. Create a function that receives a dictionary containing student names and marks, then determines which student has the highest marks.
+def student_result(students):
+    highest_marks = students["Ali"]
+    
+    for name, marks in students.items():
+        if marks > highest_marks:
+            highest_marks = marks
+            student_name = name
+            
+    print(f"{student_name} obtained the highest marks : {highest_marks}")
+
+students = {
+    "Ali": 85,
+    "Sara": 99,
+    "Ahmed": 98,
+    "Zain": 95
+}
+
+student_result(students)
+
 # 41. Create a function that receives a sentence and counts how many words it contains.
 # 42. Create a function that receives a sentence and returns the number of unique words using a set.
 # 43. Create a function that receives a list of numbers and returns a new list containing only the even numbers.
