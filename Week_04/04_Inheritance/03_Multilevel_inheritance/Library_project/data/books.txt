@@ -1,0 +1,6 @@
+The Hobbit|J.R.R. Tolkien|Fantasy
+Harry Potter|J.K. Rowling|Fantasy
+Animal Farm|George Orwell|Dystopian Fiction
+The Alchemist|Paulo Coelho|Fiction
+The Great Gatsby|F. Scott Fitzgerald|Classic
+Clean Code|Robert C. Martin|Programming
